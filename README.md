@@ -289,6 +289,9 @@ sysctl net.ipv6.conf.all.forwarding
 [Before I do anything on Proxmox, I do this first...
 ](https://technotim.live/posts/first-11-things-proxmox/)
 
+[Install Proxmox on a Hetzner Dedicated Server with 1 IP using SDN and without KVM using QEMU](https://cyanlabs.net/tutorials/install-proxmox-on-a-hetzner-dedicated-server-with-1-ip-using-sdn-and-without-kvm-using-qemu/)
+
+
 
 > END My Notes
 #### Do other configs like this : 
@@ -319,5 +322,3 @@ https://github.com/rloyaute/proxmox-iptables-hetzner
 [firewalld-cmd](https://computingforgeeks.com/how-to-install-and-configure-firewalld-on-debian/)
 
 [proxmox-setup on blog](https://mehrdad.ariadata.co/notes/proxmox-setup-network-on-hetzner/)
-
-[Install Proxmox on a Hetzner Dedicated Server with 1 IP using SDN and without KVM using QEMU](https://cyanlabs.net/tutorials/install-proxmox-on-a-hetzner-dedicated-server-with-1-ip-using-sdn-and-without-kvm-using-qemu/)
