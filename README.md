@@ -261,6 +261,29 @@ reboot
 #### Login to `Web GUI`:
 **https://IP_ADDRESS:8006/**
 
+## Enable IP Forwarding on the Host
+With a routed setup, the bridges (vmbr0, for example) are not connected with the physical interface. You need to activate IP forwarding on the host system. Please note that packet forwarding between network interfaces is disabled for the default Hetzner installation. In order to make IP forwarding persistent across reboots, use the following commands bellow:
+
+For IPv4 and IPv6:
+
+```sh
+sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
+sed -i 's/#net.ipv6.conf.all.forwarding=1/net.ipv6.conf.all.forwarding=1/' /etc/sysctl.conf
+```
+
+Apply the changes:
+
+```sh
+sysctl -p
+```
+
+Check if the forwarding is active:
+
+```sh
+sysctl net.ipv4.ip_forward
+sysctl net.ipv6.conf.all.forwarding
+```
+
 #### Do other configs like this : 
 > MASQUERADE and NAT rules, by using samples [example](https://github.com/ariadata/proxmox-hetzner/raw/main/files/iptables-sample) | 
 [rules.v4](https://github.com/ariadata/proxmox-hetzner/blob/main/files/rules.v4) |
