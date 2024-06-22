@@ -199,7 +199,7 @@ reboot
 * Config hostname,timezone and resolv file :
 ```shell
 hostnamectl set-hostname proxmox-example
-timedatectl set-timezone Europe/Istanbul
+timedatectl set-timezone Europe/Kyiv
 printf "nameserver 1.1.1.1\nnameserver 2606:4700:4700::1111\n" > /etc/resolv.conf
 ```
 * edit `/etc/hosts` file like this :
